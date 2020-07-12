@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+ul, ol {
+  list-style: none;
+}
+
+#slide {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+#slide ul {
+  position: relative;
+  left: 0%;
+  margin: auto;
+  height: auto;
+  width: 200%;
+  clear: both;
+  transition: left 500ms ease;
+  -moz-transition: left 500ms ease;
+  -o-transition: left 500ms ease;
+}
+
+#slide ul li {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+#slide ul li img {
+  width: 100%;
+}
+
+#slide ul li h1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: #fff;
+  font-size: 3rem;
+}
+#slide ul li h2 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 40%;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  padding: 10px;
+}
+
+#slide .arrow {
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  padding: 30px 10px;
+  background: #000;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+#slide #prev {
+  left: 0;
+}
+#slide #next {
+  right: 0;
+}
+
+#slide #paginacion {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  line-height: 12px;
+  font-size: 15px;
+  left: 0;
+  z-index: 1;
+  bottom: 10px;
+}
+#slide #paginacion li {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: .5;
+  color: #fff;
+  text-shadow: 0 0 5px #333;
+}
+#slide #paginacion li:first-child {
+  opacity: 1;
+}
